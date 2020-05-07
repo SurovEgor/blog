@@ -26,6 +26,7 @@ a {
 }
 .header__search img {
     width: 18px;
+    vertical-align: middle;
 }
 .header__search img:hover {
     color: #fff;
@@ -44,12 +45,25 @@ a {
     width: 0;
     left: 0;
     height: 2px;
-    background-color: #000;
+    background-color: red;
     position: absolute;
+}
+.menu__item::before {
+    content:"";
+    bottom:-10px;
+    width: 0;
+    right: 0;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+}
+.menu__item:hover::before {
+    width: 100%;
+    transition: 0.8s;
 }
 .menu__item:hover::after {
     width: 100%;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .header__input {
     position: absolute;
@@ -61,6 +75,11 @@ a {
     opacity: 0;
     visibility: hidden;
     margin: 0 auto;
+    border-radius: 4px;
+    border:1px solid #000;
+    outline: none;
+    font-size: 18px;
+    padding: 2px 5px;
 }
 .open {
     width: 100%;

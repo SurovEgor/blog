@@ -17,7 +17,8 @@ header {
     height: 100%;
     align-items: center;
     position: relative;
-    padding: 0 8px;
+    padding: 0 16px 0 8px;
+    overflow: hidden;
 }
 .header_cover h1 {
     font-size: 24px;
@@ -103,6 +104,6 @@ a {
     display: none;
 }
 .input__cover {
-    padding: 0 12px 0 8px;
+    padding: 0 16px 0 8px;
     overflow: hidden;
 }

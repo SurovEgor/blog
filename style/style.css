@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 header {
@@ -17,6 +17,7 @@ header {
     height: 100%;
     align-items: center;
     position: relative;
+    padding: 0 8px;
 }
 .header_cover h1 {
     font-size: 24px;
@@ -70,26 +71,21 @@ a {
 .header__input {
     position: absolute;
     right: 0;
-    bottom: 0;
     width: 0;
-    height: 50px;
-    transition: width 0.3s;
+    height: 40px;
+    transition: width 0.4s;
     opacity: 0;
     visibility: hidden;
-    margin: 0 auto;
     border-radius: 5px;
-    border:1px solid rgb(155, 155, 155);
-    border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border:1px solid rgb(155, 155, 155, 0.5);
     outline: none;
-    font-size: 18px;
+    font-size: 16px;
     padding: 2px 5px;
-    box-shadow: 0 0 8px rgb(219, 219, 219);
 }
 .open {
     width: 100%;
     opacity: 1;
     visibility: visible;
     z-index: 2;
+    
 }

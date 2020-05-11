@@ -1,13 +1,26 @@
 let searchButton = document.getElementById("search"),
-    input = document.getElementById("input");
+    input = document.getElementById("input"),
+    inputFocus = document.getElementById("inputFocus"),
+    closeSearchButton = document.getElementById("close__search");
 
 
     searchButton.addEventListener("click", () => { 
       input.classList.add("open");
-      input.focus();
+      inputFocus.focus();
+      searchButton.style.display = "none";
+      closeSearchButton.style.display = "block";
     });
    
     document.addEventListener('click', (event) => {
-      if ((!input.contains(event.target)) && (!searchButton.contains(event.target)))
-          input.classList.remove("open");
+      if ((!input.contains(event.target)) && (!searchButton.contains(event.target))) {
+         input.classList.remove("open");
+         searchButton.style.display = "block";
+         closeSearchButton.style.display = "none";
+      }
+    });
+    
+    closeSearchButton.addEventListener("click", () => {
+        input.classList.remove("open");
+        searchButton.style.display = "block";
+        closeSearchButton.style.display = "none";
     });

@@ -17,7 +17,6 @@ header {
     height: 100%;
     align-items: center;
     position: relative;
-    padding: 0 8px;
 }
 .header_cover h1 {
     font-size: 24px;
@@ -40,6 +39,7 @@ a {
     border:none;
     background-color:#fff;
     outline: none;
+    z-index: 100;
 }
 .menu__item {
     margin-right: 20px;
@@ -76,20 +76,26 @@ a {
     position: absolute;
     right: 0;
     width: 0;
-    height: 40px;
-    transition: width 0.4s;
     opacity: 0;
+    transition: width 0.4s;
     visibility: hidden;
+}
+.header__input input { 
+    height: 40px;
+    width: 100%;
     border-radius: 5px;
     border:1px solid rgb(155, 155, 155, 0.5);
     outline: none;
     font-size: 16px;
-    padding: 2px 5px;
+    padding: 2px 4px;
 }
 .open {
     width: 100%;
     opacity: 1;
     visibility: visible;
-    z-index: 2;
-    
+}
+#close__search {
+    width: 14px;
+    fill: rgb(70, 70, 70);
+    display: none;
 }

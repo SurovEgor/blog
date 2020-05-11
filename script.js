@@ -4,11 +4,10 @@ let searchButton = document.getElementById("search"),
 
     searchButton.addEventListener("click", () => { 
       input.classList.add("open");
+      input.focus();
     });
    
-  document.addEventListener('click', (event) => !input.contains(event.target) && !searchButton.contains(event.target) ? input.classList.remove("open"): false)
-  
-
-
-
-// (input.classList.contains("open")
+    document.addEventListener('click', (event) => {
+      if ((!input.contains(event.target)) && (!searchButton.contains(event.target)))
+          input.classList.remove("open");
+    });

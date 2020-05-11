@@ -37,6 +37,9 @@ a {
 }
 .header__search {
     cursor: pointer;
+    border:none;
+    background-color:#fff;
+    outline: none;
 }
 .menu__item {
     margin-right: 20px;

@@ -108,6 +108,9 @@ a {
 }
 .hamburger {
     display: none;
+    border:none;
+    background-color:#fff;
+    outline: none;
 }
 .hamburger .line{
     width: 30px;

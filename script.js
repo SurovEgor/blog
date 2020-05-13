@@ -1,9 +1,9 @@
 const searchButton = document.getElementById("search"),
-    input = document.getElementById("input"),
-    inputFocus = document.getElementById("inputFocus"),
-    closeSearchButton = document.getElementById("close__search"),
-    button = document.getElementById("hamburger-1"),
-    mobile = document.getElementById("mobile");
+      input = document.getElementById("input"),
+      inputFocus = document.getElementById("inputFocus"),
+      closeSearchButton = document.getElementById("close__search"),
+      button = document.getElementById("hamburger-1"),
+      mobile = document.getElementById("mobile");
 
     searchButton.addEventListener("click", () => { 
       input.classList.add("open");

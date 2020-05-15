@@ -2,8 +2,8 @@ const searchButton = document.getElementById("search"),
       input = document.getElementById("input"),
       inputFocus = document.getElementById("inputFocus"),
       closeSearchButton = document.getElementById("close__search"),
-      button = document.getElementById("hamburger-1"),
-      mobile = document.getElementById("mobile");
+      buttonMenu = document.getElementById("button-menu"),
+      navCover = document.getElementById("nav-cover");
 
     searchButton.addEventListener("click", () => { 
       input.classList.add("open");
@@ -26,7 +26,7 @@ const searchButton = document.getElementById("search"),
         closeSearchButton.style.display = "none";
     });
 
-    button.addEventListener("click", () => {
-        button.classList.toggle("is-active");
-        mobile.classList.toggle("mobile__menu-active");
+    buttonMenu.addEventListener("click", () => {
+        buttonMenu.classList.toggle("is-active");
+        navCover.classList.toggle("opened");
     });

@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="header-logo"><a href="#" class="logo">TestName</a></div>
+   <header class="header">
+      <nav class="navbar">
+         <div class="header-logo"><a href="#" class="logo">TestName</a></div>
 
+         <div class="nav-cover-wrapper" id="nav-cover">
             <ul class="nav-links">
                <li class="nav-links__item"><a href="#" class="nav-links__item-link">Публикации</a></li>
                <li class="nav-links__item"><a href="#" class="nav-links__item-link">Новое</a></li>
@@ -29,30 +30,23 @@
                   <svg id="close__search" class="search-button-close" height="512px" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z"/></svg>
                </button>
             </div>
-
-            <button class="hamburger" id="hamburger-1" aria-label="Меню">
-               <span class="line"></span>
-               <span class="line"></span>
-               <span class="line"></span>
-            </button>
                 
             <form class="search-form" id="input">
                <div class="search-form__field-wrapper">
                   <input class="search-form-field" type="text" placeholder="Поиск" id="inputFocus">
                </div>
-           </form>
-           </nav>
-           <div class="mobile__menu" id="mobile">
-            <div class="mobile__input"><input type="text" placeholder="Поиск"></div>   
-                <nav class="header__mobile">
-                  <a href="#">Публикации</a>
-                  <a href="#">Новое</a>
-                  <a href="#">Контакты</a>
-                  <a href="#">О нас</a>
-                  <a href="#">Реклама</a>
-                </nav>
-        </div>  
-    </header>
+            </form> 
+         </div>
+
+         <div class="button-menu-wrapper">
+            <button class="button-menu" id="button-menu" aria-label="Меню">
+               <span class="line"></span>
+               <span class="line"></span>
+               <span class="line"></span>
+            </button>
+         </div>
+      </nav>
+   </header>
 
     <script src="script.js"></script>
 </body>

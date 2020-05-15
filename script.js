@@ -1,13 +1,13 @@
+"use strict";
+
 const searchButton = document.getElementById("search"),
       input = document.getElementById("input"),
-      inputFocus = document.getElementById("inputFocus"),
       closeSearchButton = document.getElementById("close__search"),
       buttonMenu = document.getElementById("button-menu"),
       navCover = document.getElementById("nav-cover");
 
     searchButton.addEventListener("click", () => { 
       input.classList.add("open");
-      inputFocus.focus();
       searchButton.style.display = "none";
       closeSearchButton.style.display = "block";
     });

@@ -12,8 +12,8 @@ const searchButton = document.getElementById("search"),
       closeSearchButton.style.display = "block";
     });
    
-    document.addEventListener('click', (event) => {
-      if ((!input.contains(event.target)) && (!searchButton.contains(event.target))) {
+    document.addEventListener('click', (e) => {
+      if (!input.contains(e.target) && !searchButton.contains(e.target)) {
          input.classList.remove("open");
          searchButton.style.display = "block";
          closeSearchButton.style.display = "none";
